@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import About from '../components/About'
+import Experience from '../components/Experience'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
+import Skills from '../components/Skills'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -19,12 +21,17 @@ export default function Home() {
     <Hero />
   </section> 
 
-{/* About */}
 <section id='about' className='snap-center'>
   <About />
 </section>
 
-{/* Experience */}
+{/* when done change to work experoence*/}
+<section id='experience' className='snap-center'>
+  <Experience />
+</section>
+<section id='skills' className='snap-start'>
+  <Skills />
+</section>
 
 {/* Projects */}
 

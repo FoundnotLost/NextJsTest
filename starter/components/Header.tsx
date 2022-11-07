@@ -26,20 +26,20 @@ function Header({}: Props) {
             
         {/* Media Icons */}
         <SocialIcon url="https://github.com/FoundnotLost" 
-        fgColor='gray'
+        fgColor='#7C3AED'
         bgColor='transparent' />
 
         <SocialIcon url="https://github.com/FoundnotLost" 
-        fgColor='gray'
+        fgColor='#7C3AED'
         bgColor='transparent' />
 
         <SocialIcon url="https://github.com/FoundnotLost" 
-        fgColor='gray'
+        fgColor='#7C3AED'
         bgColor='transparent' />
 
 
         <SocialIcon url="https://github.com/FoundnotLost" 
-        fgColor='gray'
+        fgColor='#7C3AED'
         bgColor='transparent' />
 
         </motion.div>
@@ -63,7 +63,7 @@ function Header({}: Props) {
         <SocialIcon
         className='cursor-pointer'
         network='email'
-        fgColor='gray'
+        fgColor='#7C3AED'
         bgColor='transparent'
         />
         <p className='uppercase hidden md:inline-flex text-sm text-gray-400'> Contact Me</p>
