@@ -7,4 +7,7 @@
         uppercase text-xs
         tracking-widest text-purple-500 transition-all hover:border-[#9C27B0] hover:text-[#38BDF8]
     }
+    .contactInput {
+        @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 border-[#242424]
+    }
 }
