@@ -14,10 +14,12 @@ type Props = {}
 function Contact({}: Props) {
     const { 
         register, 
-        handleSubmit } = useForm<IFormInput>();
+        handleSubmit } = useForm<Inputs>();
 
-    const onSubmit: SubmitHandler<IFormInput> = formData => (
-        window.location.href = `mailto:jasonmadruga25@gmail.com?subject={formData.subject}&boday=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+    const onSubmit: SubmitHandler<Inputs> = (formData) => (
+        window.location.href = `mailto:jasonmadruga25@gmail.com?subject=${formData.subject}&
+        body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`
+    
     );
  
  
@@ -51,26 +53,35 @@ function Contact({}: Props) {
                 </div>
             </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
+        <form onSubmit={handleSubmit(onSubmit)} 
+        className='flex flex-col space-y-2 w-fit mx-auto'>
+
             <div className='flex space-x-2'>
-                <input {...register('name')} 
+                <input 
+                {...register('name')} 
                 placeholder='Name'
                 className='contactInput' 
                 type="text" />
 
-                <input {...register('email')} 
+                <input 
+                {...register('email')} 
                 placeholder='Email' 
                 className='contactInput' 
                 type="email" />
 
             </div>
-            <input {...register ('subject')} 
-            placeholder='Subject' 
-            className='contactInput' />
 
-            <textarea {...register ('message')}
+            <input 
+            {...register ('subject')} 
+            placeholder='Subject' 
+            className='contactInput'
+            type='text' />
+
+            <textarea 
+            {...register ('message')}
              placeholder='Message' 
-             className='contactInput' />
+             className='contactInput'
+             />
 
             <button id='submit' className='heroButton'>Submit</button>
         </form>
