@@ -1,29 +1,41 @@
 export default {
-    name: 'projects',
-    title: 'projects',
+    name: 'Experience',
+    title: 'experience',
     type: 'document',
     fields: [
       {
-        name: 'title',
-        title: 'Title',
-        description: 'Title of Projects',
+        name: 'jobTitle',
+        title: 'JobTitle',
         type: 'string',
       },
       {
-        name: 'image',
-        title: 'Image',
+        name: 'role',
+        title: 'Role',
+        type: 'string',
+      },
+      {
+        name: 'companyImage',
+        title: 'CompanyImage',
         type: 'image',
         options: {
           hotspot: true,
         },
       },
       {
-        name: 'summary',
-        title: 'Summary',
-        type: 'text',
-
+        name: 'dateStarted',
+        title: 'DateStarted',
+        type: 'string',
       },
-    
+      {
+        name: 'dateEnded',
+        title: 'DateEnded',
+        type: 'string',
+      },
+      {
+        name: 'isCurrentlyWorkingHere',
+        title: 'IsCurrentlyWorkingHere',
+        type: 'Boolean',
+      },
       {
         name: 'technologies',
         title: 'Techologies',
@@ -31,10 +43,10 @@ export default {
         of: [{ type: 'reference', to: { type: 'skill'} }],
       },
       {
-        name: 'linkToBuild',
-        title: 'LinkToBuild',
-        type: 'url',
-        
+        name: 'points',
+        title: 'Points',
+        type: 'array',
+        of: [{ type: 'string'}],
       },
      
     ],

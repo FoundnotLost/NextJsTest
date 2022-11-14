@@ -9,6 +9,11 @@ export default {
         type: 'string',
       },
       {
+        name: 'role',
+        title: 'Role',
+        type: 'string',
+      },
+      {
         name: 'companyImage',
         title: 'CompanyImage',
         type: 'image',
@@ -19,12 +24,12 @@ export default {
       {
         name: 'dateStarted',
         title: 'DateStarted',
-        type: 'date',
+        type: 'string',
       },
       {
         name: 'dateEnded',
         title: 'DateEnded',
-        type: 'date',
+        type: 'string',
       },
       {
         name: 'isCurrentlyWorkingHere',
