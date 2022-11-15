@@ -34,7 +34,7 @@ export default {
       {
         name: 'isCurrentlyWorkingHere',
         title: 'IsCurrentlyWorkingHere',
-        type: 'Boolean',
+        type: 'boolean',
       },
       {
         name: 'technologies',

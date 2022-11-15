@@ -9,17 +9,17 @@ export default {
         type: 'string',
       },
       {
-        name: 'role',
-        title: 'Role',
-        type: 'string',
-      },
-      {
         name: 'companyImage',
         title: 'CompanyImage',
         type: 'image',
         options: {
           hotspot: true,
         },
+      },
+      {
+        name: 'companyName',
+        title: 'CompanyName',
+        type: 'string',
       },
       {
         name: 'dateStarted',
@@ -34,7 +34,7 @@ export default {
       {
         name: 'isCurrentlyWorkingHere',
         title: 'IsCurrentlyWorkingHere',
-        type: 'Boolean',
+        type: 'boolean',
       },
       {
         name: 'technologies',
